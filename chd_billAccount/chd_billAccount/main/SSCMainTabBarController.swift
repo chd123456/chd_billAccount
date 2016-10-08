@@ -23,6 +23,7 @@ class CHDMainTabBarController: UITabBarController,UITabBarControllerDelegate {
         item.setTitleTextAttributes(selectedAttrs, forState: .Selected)
 
     }
+    
     var _homeCtl = UIViewController()
     var _detailCtl = UIViewController()
     var _profileCtl = UIViewController()
@@ -31,6 +32,9 @@ class CHDMainTabBarController: UITabBarController,UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        _homeCtl.view.backgroundColor = UIColor.whiteColor()
+        _detailCtl.view.backgroundColor = UIColor.whiteColor()
+        _profileCtl.view.backgroundColor = UIColor.whiteColor()
         //添加子控制器
         self.setupChildVc(_homeCtl, title: "新建礼单",tabBarItemTitle:"新建礼单本", image: "tabBar_home_icon", selectedImage: "tabBar_home_click_icon")
         self.setupChildVc(_detailCtl, title: "礼单明细", tabBarItemTitle:"礼单明细",image: "tabBar_detail_icon", selectedImage: "tabBar_detail_click_icon")
@@ -42,11 +46,7 @@ class CHDMainTabBarController: UITabBarController,UITabBarControllerDelegate {
       
         self.tabBar.backgroundImage = UIImage(named: "图层-45")
         UITabBar.appearance().shadowImage = UIImage(named: "矩形-19")
-        //self.tabBar.height = 49
-        //self.tabBar.barTintColor = UIColor.clearColor()
-        
-        //badgeValue要定时请：
-//        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(requestUnreadNumber), userInfo: nil, repeats: true)
+  
         
         
 
