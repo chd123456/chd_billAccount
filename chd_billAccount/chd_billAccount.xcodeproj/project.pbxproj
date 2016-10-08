@@ -300,6 +300,7 @@
 				F3823B561DA8D1AB0033AFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
