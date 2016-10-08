@@ -36,8 +36,8 @@ class CHDMainTabBarController: UITabBarController,UITabBarControllerDelegate {
         _detailCtl.view.backgroundColor = UIColor.whiteColor()
         _profileCtl.view.backgroundColor = UIColor.whiteColor()
         //添加子控制器
-        self.setupChildVc(_homeCtl, title: "新建礼单",tabBarItemTitle:"新建礼单本", image: "tabBar_home_icon", selectedImage: "tabBar_home_click_icon")
-        self.setupChildVc(_detailCtl, title: "礼单明细", tabBarItemTitle:"礼单明细",image: "tabBar_detail_icon", selectedImage: "tabBar_detail_click_icon")
+        self.setupChildVc(_homeCtl, title: "新建礼单",tabBarItemTitle:"新建礼单", image: "tabBar_home_icon", selectedImage: "tabBar_home_click_icon")
+       // self.setupChildVc(_detailCtl, title: "礼单明细", tabBarItemTitle:"礼单明细",image: "tabBar_detail_icon", selectedImage: "tabBar_detail_click_icon")
         
         self.setupChildVc(_profileCtl, title: "我的礼单",tabBarItemTitle:"我的礼单", image: "tabBar_profile_icon", selectedImage: "tabBar_profile_click_icon")
         // Do any additional setup after loading the view.
